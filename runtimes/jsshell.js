@@ -29,6 +29,12 @@ var $262 = {
       return { type: 'throw', value: e };
     }
   },
+  clearKeptObjects() {
+    throw new Test262Error('clearKeptObjects() not yet supported.');
+  },
+  detachArrayBuffer() {
+    throw new Test262Error('detachArrayBuffer() not yet supported.');
+  },
   getGlobal(name) {
     return this.global[name];
   },

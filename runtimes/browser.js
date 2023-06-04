@@ -82,6 +82,12 @@ var $262 = window.$262 = {
   setGlobal(name, value) {
     this.global[name] = value;
   },
+  clearKeptObjects() {
+    throw new Test262Error('clearKeptObjects() not yet supported.');
+  },
+  detachArrayBuffer() {
+    throw new Test262Error('detachArrayBuffer() not yet supported.');
+  },
   destroy() {
     $262.socket.emit('destroy')
   },
