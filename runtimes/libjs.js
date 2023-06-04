@@ -7,10 +7,10 @@ var $262 = {
     return gc();
   },
   createRealm(options) {
-    throw new InternalError('createRealm() not yet supported.');
+    throw new InternalError('createRealm() not supported');
   },
   evalScript(code) {
-    throw new InternalError('evalScript() not yet supported.');
+    throw new InternalError('evalScript() not supported');
   },
   getGlobal(name) {
     return this.global[name];
@@ -18,10 +18,16 @@ var $262 = {
   setGlobal(name, value) {
     this.global[name] = value;
   },
+  clearKeptObjects() {
+    throw new InternalError('clearKeptObjects() not supported');
+  },
+  detachArrayBuffer() {
+    throw new InternalError('detachArrayBuffer() not supported');
+  },
   destroy() { /* noop */ },
   IsHTMLDDA() { return {}; },
   source: $SOURCE,
   get agent() {
-    throw new InternalError('agent.* not yet supported.');
+    throw new InternalError('agent.* not supported');
   }
 };
