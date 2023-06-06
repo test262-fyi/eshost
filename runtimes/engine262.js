@@ -20,12 +20,6 @@
   $262.setGlobal = (name, value) => {
     $262.global[name] = value;
   };
-  $262.clearKeptObjects = function () {
-    throw new Test262Error('clearKeptObjects() not yet supported.');
-  };
-  $262.detachArrayBuffer = function () {
-    throw new Test262Error('detachArrayBuffer() not yet supported.');
-  };
   $262.destroy = () => {};
   $262.source = $SOURCE;
 }

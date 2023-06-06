@@ -48,12 +48,6 @@ $262.createRealm = function (options = {}) {
   }
   return realm;
 };
-$262.clearKeptObjects = function () {
-  throw new Test262Error('clearKeptObjects() not yet supported.');
-};
-$262.detachArrayBuffer = function () {
-  throw new Test262Error('detachArrayBuffer() not yet supported.');
-};
 
 
 if (!$262.IsHTMLDDA) {

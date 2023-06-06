@@ -23,12 +23,6 @@ if (!$262) {
     setGlobal(name, value) {
       global[name] = value;
     },
-    clearKeptObjects() {
-      throw new InternalError('clearKeptObjects() not yet supported.');
-    },
-    detachArrayBuffer() {
-      throw new InternalError('detachArrayBuffer() not yet supported.');
-    },
     agent: (function() {
       function thrower() {
         throw new Test262Error('agent.* not yet supported.');
