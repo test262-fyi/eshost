@@ -7,7 +7,7 @@ var $262 = Object.assign({}, qjs);
 $262.source = $SOURCE;
 $262.destroy = function() {};
 $262.gc = function() {
-  throw new Test262Error('gc() not yet supported.');
+  std.gc();
 };
 $262.getGlobal = function(name) {
   return this.global[name];
@@ -16,10 +16,8 @@ $262.setGlobal = function(name, value) {
   this.global[name] = value;
 };
 $262.evalScript = function(code) {
-  if (!DollarEvalScript) throw new Test262Error('evalScript() not yet supported.');
-
   try {
-    DollarEvalScript(code);
+    std.evalScript(code);
     return { type: 'normal', value: undefined };
   } catch (e) {
     return { type: 'throw', value: e };
