@@ -19,9 +19,7 @@ if (!globalThis['$262']) {
     setGlobal(name, value) {
       this.global[name] = value;
     },
-    destroy() { /* noop */ },
     IsHTMLDDA() { return {}; },
-    source: $SOURCE,
     get agent() {
       throw new Test262Error('agent.* not yet supported.');
     }
