@@ -1,6 +1,7 @@
-function print(...args) {
-  console.log(...args);
+function print() {
+  console.log.apply(global, arguments);
 }
+
 var vm = require('vm');
 var $262 = {
   global: Function('return this')(),
@@ -12,9 +13,9 @@ var $262 = {
     options.globals = options.globals || {};
 
     context = {
-      console,
-      require,
-      print,
+      console: console,
+      require: require,
+      print: print,
     };
 
     for(var glob in options.globals) {
@@ -33,12 +34,11 @@ var $262 = {
     return context.$262;
   },
   evalScript(code) {
-    const displayErrors = false;
     try {
       if (this.context) {
-        vm.runInContext(code, this.context, {displayErrors});
+        vm.runInContext(code, this.context, { displayErrors: false });
       } else {
-        vm.runInESHostContext(code, {displayErrors});
+        vm.runInESHostContext(code, { displayErrors: false });
       }
 
       return { type: 'normal', value: undefined };
