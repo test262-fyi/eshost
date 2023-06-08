@@ -24,6 +24,9 @@ var $262 = {
     }
 
     var context = vm.createContext(context);
+    for (var i = 0; i < this.preludes.length; i++) {
+      vm.runInContext(this.preludes[i], context);
+    }
     vm.runInContext(this.source, context);
     context.$262.source = this.source;
     context.$262.context = context;
@@ -56,5 +59,6 @@ var $262 = {
   },
   destroy: function() { /* noop */ },
   IsHTMLDDA: function() { return {}; },
-  source: $SOURCE
+  source: $SOURCE,
+  preludes: []
 };
