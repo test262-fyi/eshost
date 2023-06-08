@@ -1,5 +1,5 @@
 function print() {
-  console.log.apply(global, arguments);
+  console.log.apply({}, arguments);
 }
 
 var vm = require('vm');
