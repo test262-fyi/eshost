@@ -18,8 +18,9 @@ var $262 = {
       print: print,
     };
 
-    for (var glob of Object.keys(options.globals)) {
-      context[glob] = options.globals[glob];
+    var keys = Object.keys(options.globals);
+    for (var i = 0; i < keys.length; i++) {
+      context[keys[i]] = options.globals[keys[i]];
     }
 
     var context = vm.createContext(context);
