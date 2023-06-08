@@ -18,7 +18,7 @@ var $262 = {
       print: print,
     };
 
-    for(var glob in options.globals) {
+    for(var glob of Object.keys(options.globals)) {
        context[glob] = options.globals[glob];
     }
 
