@@ -3,6 +3,7 @@ function print() {
 }
 
 var vm = require('vm');
+var fs = require('fs');
 var $262 = {
   global: Function('return this')(),
   gc: function() {
