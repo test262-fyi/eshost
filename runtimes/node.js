@@ -5,10 +5,10 @@ function print() {
 var vm = require('vm');
 var $262 = {
   global: Function('return this')(),
-  gc() {
+  gc: function() {
     return gc();
   },
-  createRealm(options) {
+  createRealm: function(options) {
     options = options || {};
     options.globals = options.globals || {};
 
@@ -18,8 +18,8 @@ var $262 = {
       print: print,
     };
 
-    for(var glob of Object.keys(options.globals)) {
-       context[glob] = options.globals[glob];
+    for (var glob of Object.keys(options.globals)) {
+      context[glob] = options.globals[glob];
     }
 
     var context = vm.createContext(context);
@@ -31,9 +31,10 @@ var $262 = {
         options.destroy();
       }
     };
+  
     return context.$262;
   },
-  evalScript(code) {
+  evalScript: function(code) {
     try {
       if (this.context) {
         vm.runInContext(code, this.context, { displayErrors: false });
@@ -46,15 +47,13 @@ var $262 = {
       return { type: 'throw', value: e };
     }
   },
-  getGlobal(name) {
+  getGlobal: function(name) {
     return this.global[name];
   },
-  setGlobal(name, value) {
+  setGlobal: function(name, value) {
     this.global[name] = value;
   },
-  destroy() { /* noop */ },
-  IsHTMLDDA() { return {}; },
+  destroy: function() { /* noop */ },
+  IsHTMLDDA: function() { return {}; },
   source: $SOURCE
 };
-
-
