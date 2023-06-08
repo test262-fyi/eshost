@@ -60,6 +60,6 @@ var $262 = {
   },
   destroy: function() { /* noop */ },
   IsHTMLDDA: function() { return {}; },
-  source: $SOURCE,
-  preludes: []
+  preludes: [],
+  source: $SOURCE
 };
