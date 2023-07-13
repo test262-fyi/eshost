@@ -33,6 +33,7 @@ const hosts = [
   ["hermes", { hostPath: makeHostPath("hermes") }],
   ["jsshell", { hostPath: makeHostPath("sm") }],
   ["jsc", { hostPath: makeHostPath("jsc") }],
+  ["kiesel", { hostPath: makeHostPath("kiesel") }],
   ["libjs", { hostPath: makeHostPath("serenity-js") }],
   ["node", { hostPath: "node" }], // Not provided by esvu
   ["qjs", { hostPath: makeHostPath("quickjs-run-test262") }],
