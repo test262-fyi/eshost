@@ -13,6 +13,9 @@ var $262 = {
     realm.$262.source = this.source;
     return realm.$262;
   },
+  detachArrayBuffer(buffer) {
+    return Kiesel.detachArrayBuffer(buffer);
+  },
   evalScript(code) {
     return Kiesel.evalScript(code);
   },
