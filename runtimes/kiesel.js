@@ -26,9 +26,7 @@ var $262 = {
     this.global[name] = value;
   },
   destroy() { /* noop */ },
-  IsHTMLDDA() {
-    return Kiesel.createIsHTMLDDA();
-  },
+  IsHTMLDDA: Kiesel.createIsHTMLDDA(),
   source: $SOURCE,
   agent: {},
 };

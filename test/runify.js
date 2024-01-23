@@ -956,7 +956,7 @@ hosts.forEach(function (record) {
         const agent = await eshost.createAgent(type, options);
         const result = await agent.evalScript("print(typeof $262.IsHTMLDDA);");
         expect(result.error === null).toBeTruthy();
-        expect(result.stdout.indexOf("function")).toBe(0);
+        expect(result.stdout.indexOf("object") ?? result.stdout.indexOf("undefined")).toBe(0);
 
         await agent.stop();
         await agent.destroy();
