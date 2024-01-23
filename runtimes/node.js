@@ -59,7 +59,7 @@ var $262 = {
     this.global[name] = value;
   },
   destroy: function() { /* noop */ },
-  IsHTMLDDA: function() { return {}; },
+  IsHTMLDDA: {},
   preludes: [],
   source: $SOURCE
 };

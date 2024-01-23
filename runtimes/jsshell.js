@@ -36,13 +36,10 @@ var $262 = {
     this.global[name] = value;
   },
   destroy() { /* noop */ },
-  IsHTMLDDA() {
-    /* objectEmulatingUndefined was replaced by createIsHTMLDDA in newer SpiderMonkey builds. */
-    if (typeof createIsHTMLDDA === 'function') {
-      return createIsHTMLDDA();
-    }
-    return objectEmulatingUndefined();
-  },
+  /* objectEmulatingUndefined was replaced by createIsHTMLDDA in newer SpiderMonkey builds. */
+  IsHTMLDDA: typeof createIsHTMLDDA === 'function' 
+    ? createIsHTMLDDA()
+    : objectEmulatingUndefined(),
   source: $SOURCE,
   /* https://github.com/mozilla/gecko-dev/blob/b9f0fcc3d6c0e9fffe5208212553aedd51e1428c/js/src/builtin/TestingFunctions.cpp */
   detachArrayBuffer,
