@@ -11,7 +11,7 @@ var $262 = {
     options = options || {};
     options.globals = options.globals || {};
 
-    context = {
+    var context = {
       print: print,
     };
 
