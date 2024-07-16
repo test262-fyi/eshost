@@ -1,3 +1,5 @@
-$262 = {};
-$262.global = globalThis;
-$262.destroy = function() {};
+globalThis.$262 = {
+    global: globalThis,
+
+    destroy() {}
+};
