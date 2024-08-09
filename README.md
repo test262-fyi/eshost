@@ -29,6 +29,7 @@ npm install eshost
 | kiesel          | Kiesel          | CLI | Any | [Download](https://files.kiesel.dev/) | |
 | serenity-js     | Serenity LibJS  | CLI | Any | Build [from source](https://github.com/SerenityOS/serenity) | |
 | nashorn         | Nashorn         | CLI | Any | Build [from source](https://wiki.openjdk.java.net/display/Nashorn/Building+Nashorn) | |
+| njs             | NJS             | CLI | Any | Build [from source](https://github.com/nginx/njs/) | |
 | node            | Node.js         | CLI | Any | https://nodejs.org | [Active LTS versions only](https://nodejs.org/en/about/releases/) |
 | qjs<sup>4</sup> | QuickJS         | CLI | Any | Build [from source](https://bellard.org/quickjs/) | |
 | xs              | Moddable XS     | CLI | Any | Build [from source](https://github.com/Moddable-OpenSource/moddable-xst) | |

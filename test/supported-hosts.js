@@ -26,6 +26,7 @@ const supportedHostsMap = {
   'serenity-js': 'libjs',
   libjs: 'libjs',
   nashorn: 'nashorn',
+  njs: 'njs',
   node: 'node',
   qjs: 'qjs',
   remote: 'remote',
