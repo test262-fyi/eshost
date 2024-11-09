@@ -27,7 +27,7 @@ npm install eshost
 | jsshell¹        | SpiderMonkey    | CLI | Any | [Download](https://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-central/) | SpiderMonkey console host. |
 | jsc¹            | JavaScriptCore  | CLI | Mac² | Build [from source](http://trac.webkit.org/wiki/JavaScriptCore)³ | |
 | kiesel          | Kiesel          | CLI | Any | [Download](https://files.kiesel.dev/) | |
-| serenity-js     | Serenity LibJS  | CLI | Any | Build [from source](https://github.com/SerenityOS/serenity) | |
+| ladybird-js     | Ladybird LibJS  | CLI | Any | Build [from source](https://github.com/LadybirdBrowser/ladybird) | |
 | nashorn         | Nashorn         | CLI | Any | Build [from source](https://wiki.openjdk.java.net/display/Nashorn/Building+Nashorn) | |
 | njs             | NJS             | CLI | Any | Build [from source](https://github.com/nginx/njs/) | |
 | node            | Node.js         | CLI | Any | https://nodejs.org | [Active LTS versions only](https://nodejs.org/en/about/releases/) |
@@ -88,7 +88,7 @@ Creates an instance of a host agent for a particular host type. See the table ab
   | Hermes | `hermes` |
   | JavaScriptCore | `javascriptcore`, `jsc` |
   | Kiesel | `kiesel` |
-  | Serenity LibJS | `serenity-js`, `libjs` |
+  | Ladybird LibJS | `ladybird-js`, `libjs` |
   | Nashorn | `nashorn` |
   | Node | `node` |
   | QuickJS | `qjs` <sup>1</sup> |
