@@ -23,7 +23,7 @@ const supportedHostsMap = {
   jsc: 'jsc',
   jsshell: 'jsshell',
   kiesel: 'kiesel',
-  'serenity-js': 'libjs',
+  'ladybird-js': 'libjs',
   libjs: 'libjs',
   nashorn: 'nashorn',
   njs: 'njs',
